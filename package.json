@@ -1,7 +1,7 @@
 {
-  "name": "gitpull",
-  "description": "git pull on directory",
-  "version": "0.0.2",
+  "name": "git-pull",
+  "description": "execute git pull on given directory",
+  "version": "0.1.0",
   "author": "Aaditya Bhatia <aadityabhatia@gmail.com>",
   "contributors": [
     {
@@ -12,16 +12,22 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/aadityabhatia/gitpull.git"
+    "url": "https://github.com/aadityabhatia/git-pull.git"
   },
   "keywords": [
     "pull",
     "git",
     "repository"
   ],
-  "main": "app.coffee",
-  "engines": {
-    "node": ">=0.4.0"
+  "main": "app.js",
+  "scripts": {
+    "prepublish": "coffee -c ."
   },
-  "license": "MIT"
+  "engines": {
+    "node": ">=0.6.0"
+  },
+  "licenses": [{
+    "type": "Apache",
+    "url": "http://www.apache.org/licenses/LICENSE-2.0"
+  }]
 }

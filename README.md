@@ -1,24 +1,36 @@
-# gitpull - git pull on directory
+# git-pull
 
-## USAGE
+execute git pull on given directory
 
-    var gitpull = require('gitpull')
-    
-    gitpull('directory', function (err, consoleOutput) {
-        if (err) {
-            console.error("Error:", consoleOutput);
-        } else {
-            console.log("Success!", consoleOutput);
-        }
-    });
+## Installation
 
-## INSTALLATION
+	npm install git-pull
 
-Install via [npm](http://npmjs.org/):
+## Usage
 
-    npm install https://github.com/aadityabhatia/gitpull/tarball/master
+	var gitpull = require('git-pull')
 
-## LICENSE
+	gitpull('directory', function (err, consoleOutput) {
+		if (err) {
+			console.error("Error!", err, consoleOutput);
+		} else {
+			console.log("Success!", consoleOutput);
+		}
+	});
 
-[MIT License](https://raw.github.com/michaelnisi/gitpull/master/LICENSE)
+## License
+
+	Copyright 2012 Aaditya Bhatia
+
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+
+		http://www.apache.org/licenses/LICENSE-2.0
+
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
 
